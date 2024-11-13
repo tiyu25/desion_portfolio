@@ -1,0 +1,32 @@
+@import url('font/font.css');
+
+::-moz-selection {
+    background: var(--bk22);
+    color: var(--main-color);
+}
+::selection {
+    background: var(--bk22);
+    color: var(--main-color);
+}
+
+:root {
+    --header-height: 63px;
+}
+
+/***************** header *****************/
+.thead { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; height: var(--header-height); padding: 0 30px; border-bottom: 1px solid var(--bk33) }
+body.bgBk .thead { border-bottom-color: #fff; }
+
+/***************** gnb *****************/
+#gnb ul { display: flex; align-items: center; }
+
+/***************** wrapper *****************/
+#wrapper { overflow-y: hidden; }
+
+/***************** main_content_wrap *****************/
+.main_content_wrap { overflow: hidden; }
+
+/***************** footer *****************/
+.footer_wrap { padding: 40px 50px; background: #222; }
+.footer_wrap p { font-size: 14px; color: #fff; text-align: center; }
+.footer_wrap p.copyright { margin-top: 8px; font-size: 13px; color: #fff; text-align: center; opacity: .5; }
